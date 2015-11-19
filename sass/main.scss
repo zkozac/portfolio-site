@@ -265,6 +265,10 @@ section {
 		list-style-type: disc;
 		list-style-position: outside;
 	}
+
+	@media #{$break-mobile-large} {
+		width: 100%;
+	}
 }
 
 // FOOTER
