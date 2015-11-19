@@ -41,10 +41,6 @@ html {
 	@media #{$break-ipad-landscape} {
 		font-size: 17px;
 	}
-
-	@media #{$break-mobile-large} {
-		font-size: 14px;
-	}
 }
 
 h1 {
@@ -52,18 +48,28 @@ h1 {
 	font-size: 2.75rem;
 	font-weight: 300;
 	line-height: 1.2em;
+
+	@media #{$break-mobile-large} {
+		font-size: 1.9rem;
+	}
 }
 
 h2 {
 	margin-bottom: 1rem;
 	font-size: 2rem;
 	font-weight: 600;
+	line-height: 1.2em;
 	color: $gray;
+
+	@media #{$break-mobile-large} {
+		font-size: 1.6rem;
+	}
 }
 
 h3 {
 	margin: 1rem 0;
 	font-size: 1rem;
+	line-height: 1.3em;
 	color: $light_gray;
 }
 
@@ -126,11 +132,17 @@ hr {
 
 .container {
 	width: 75%;
+	max-width: 900px;
 	margin: 0 auto;
+
+	@media #{$break-mobile-large} {
+		width: 85%;
+	}
 }
 
 header {
 	position: relative;
+	overflow: hidden;
 	width: 100%;
 	background-color: $very_light_gray;
 	color: $gray;
@@ -158,6 +170,10 @@ header {
 		background: url(../images/header-elli.png);
 		height: 21.1rem;
 		width: 18.85rem;
+
+		@media #{$break-mobile-large} {
+			content: none;
+		}
 	}
 }
 
@@ -166,10 +182,21 @@ header {
 	max-width: 1200px;
 	margin: 0 auto 2rem;
 	padding: 2rem 0;
+
+	a {
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	@media #{$break-mobile-large} {
+		margin-bottom: 0;
+	}
 }
 
 .nav-list {
 	width: 100%;
+	margin-bottom: 0;
 	color: $light_gray;
 	@include display-flex(flex);
 	@include justify-content(space-between);
@@ -197,6 +224,11 @@ header {
 	height: auto;
 	margin: 0 auto;
 	padding: 3.5rem 0;
+
+	@media #{$break-mobile-large} {
+		width: 2rem;
+		padding: 2.5rem 0;
+	}
 }
 
 // SECTION
@@ -218,15 +250,20 @@ section {
 
 .project-heading {
 	margin-top: 2rem;
+
+	h3 {
+		font-style: italic;
+	}
 }
 
 .content {
 	width: 85%;
+	max-width: 800px;
 
 	ul {
-		margin-left: 1rem;
+		margin-left: 2rem;
 		list-style-type: disc;
-		list-style-position: inside;
+		list-style-position: outside;
 	}
 }
 
@@ -242,6 +279,10 @@ footer {
 	@include display-flex(flex);
 	@include justify-content(space-between);
 	@include align-items(center);
+
+	@media #{$break-mobile-large} {
+		@include flex-direction(column);
+	}
 }
 
 .footer-col {
@@ -249,6 +290,11 @@ footer {
 	@include display-flex(flex);
 	@include justify-content(flex-start);
 	@include align-items(center);
+
+	@media #{$break-mobile-large} {
+		@include flex-direction(column);
+		margin-bottom: 1rem;
+	}
 
 	h4 {
 		color: $light_gray;
@@ -258,6 +304,10 @@ footer {
 		width: 1.65rem;
 		height: auto;
 		padding-right: 0.7rem;
+
+		@media #{$break-mobile-large} {
+			padding: 1rem;
+		}
 	}
 }
 
