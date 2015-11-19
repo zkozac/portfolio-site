@@ -1,0 +1,264 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+//
+// Variables
+// --------------------------------------------------
+
+//
+// Breakpoints
+// ----------------------------
+$break-mobile-small:    "screen and (max-width: 350px)";
+$break-mobile:          "screen and (max-width: 568px)";
+$break-mobile-large:    "screen and (max-width: 767px)";
+$break-ipad-portrait:   "screen and (max-width: 800px)";
+$break-ipad-large:      "screen and (max-width: 992px)";
+$break-ipad-landscape:  "screen and (max-width: 1025px)";
+$break-laptop:          "screen and (max-width: 1200px)";
+$break-laptop-lg:       "screen and (max-width: 1440px)";
+$break-desktop:         "screen and (max-width: 1600px)";
+$break-largest:         "screen and (min-width: 1600px)";
+
+$fontSans: "Roboto", "proxima-nova", Helvetica, Arial, sans-serif;
+$blue: #1eb8f4;
+$very_light_gray: #f5f4f4;
+$light_gray :#c1c1c1;
+$gray: #3f3f3f;
+$black: #000;
+$white: #fff;
+
+body,
+html {
+	-webkit-font-smoothing: antialiased;
+	font-family: $fontSans;
+	font-size: 20px;
+
+	@media #{$break-ipad-landscape} {
+		font-size: 17px;
+	}
+
+	@media #{$break-mobile-large} {
+		font-size: 14px;
+	}
+}
+
+h1 {
+	margin: 0;
+	font-size: 2.75rem;
+	font-weight: 300;
+	line-height: 1.2em;
+}
+
+h2 {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 600;
+	color: $gray;
+}
+
+h3 {
+	margin: 1rem 0;
+	font-size: 1rem;
+	color: $light_gray;
+}
+
+h4 {
+	font-size: 0.6rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h5 {
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+p,
+ul {
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 1.7rem;
+	margin-bottom: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.color {
+	&--blue {
+		color: $blue;
+	}
+
+	&--gray {
+		color: $gray;
+	}
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+hr {
+	display: block;
+    height: 1px;
+    margin: 1rem auto;
+    padding: 0; 
+    border: 0;
+    border-top: 1px solid $light_gray;
+}
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	background-color: $very_light_gray;
+	color: $gray;
+	
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		bottom: 0;
+		opacity: 0.2;
+		z-index: 0;
+	}
+
+	&:before {
+	    left: 0;
+	    background: url(../images/header-head.png) no-repeat;
+	    background-position: -180px 0;
+	    height: 23.1rem;
+	    width: 23.9rem;
+	}
+
+	&:after {
+		right: 0;
+		background: url(../images/header-elli.png);
+		height: 21.1rem;
+		width: 18.85rem;
+	}
+}
+
+.navbar {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 2rem;
+	padding: 2rem 0;
+}
+
+.nav-list {
+	width: 100%;
+	color: $light_gray;
+	@include display-flex(flex);
+	@include justify-content(space-between);
+
+	li {
+		font-size: 0.6rem;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
+.right-nav {
+	@include display-flex(flex);
+	@include justify-content(space-between);
+
+	li {
+		padding: 0 1rem;
+	}
+}
+
+.scroll-down {
+	display: block;
+	width: 2.6rem;
+	height: auto;
+	margin: 0 auto;
+	padding: 3.5rem 0;
+}
+
+// SECTION
+
+section {
+	padding: 2rem 0;
+}
+
+.project {
+	margin-bottom: 5rem;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 2rem 0;
+	}
+}
+
+.project-heading {
+	margin-top: 2rem;
+}
+
+.content {
+	width: 85%;
+
+	ul {
+		margin-left: 1rem;
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+}
+
+// FOOTER
+
+footer {
+	padding: 2.5rem 0;
+	border-top: 5px solid $blue;
+	background-color: $gray;
+}
+
+.footer {
+	@include display-flex(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+}
+
+.footer-col {
+	text-align: center;
+	@include display-flex(flex);
+	@include justify-content(flex-start);
+	@include align-items(center);
+
+	h4 {
+		color: $light_gray;
+	}
+
+	img {
+		width: 1.65rem;
+		height: auto;
+		padding-right: 0.7rem;
+	}
+}
+
+
