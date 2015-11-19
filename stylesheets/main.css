@@ -311,7 +311,6 @@ footer {
 
 /* line 247, ../sass/main.scss */
 .footer-col {
-  width: 23%;
   text-align: center;
   display: -webkit-flex;
   display: flex;
@@ -320,11 +319,11 @@ footer {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 254, ../sass/main.scss */
+/* line 253, ../sass/main.scss */
 .footer-col h4 {
   color: #c1c1c1;
 }
-/* line 258, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 .footer-col img {
   width: 1.65rem;
   height: auto;

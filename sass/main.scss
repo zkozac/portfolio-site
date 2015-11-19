@@ -245,7 +245,6 @@ footer {
 }
 
 .footer-col {
-	width: 23%;
 	text-align: center;
 	@include display-flex(flex);
 	@include justify-content(flex-start);
