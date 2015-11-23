@@ -71,7 +71,7 @@ h3 {
 	font-size: 1rem;
 	line-height: 1.3em;
 	color: $light_gray;
-	font-weight: 100;
+	font-weight: 300;
 	font-style: italic;
 }
 
@@ -103,6 +103,11 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+.about {
+	margin-top: 1.5rem;
+	font-weight: 300;
 }
 
 .color {
@@ -243,6 +248,37 @@ header {
 section {
 	padding: 2rem 0;
 }
+
+* {
+	@include box-sizing(border-box);
+}
+
+.grid {
+	overflow: hidden;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+
+	.col {
+		float: left;
+		}
+
+	img {
+		max-height: 250px;
+		border: 1px solid #c1c1c1;
+		}	
+
+	.col-1-3 {
+		width: 33.33%;
+		padding-right: 20px
+		}
+
+	.col-1-3:last-child {
+		width: 33.33%;
+		padding-right: 0px;
+
+		}
+
+	}
 
 .project {
 	margin-bottom: 5rem;
