@@ -117,11 +117,10 @@ h3 {
   font-size: 1rem;
   line-height: 1.3em;
   color: #c1c1c1;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 500;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 h4 {
   font-size: 0.6rem;
   font-weight: 400;
@@ -129,14 +128,14 @@ h4 {
   letter-spacing: 1px;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 h5 {
   margin-bottom: 1rem;
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 p,
 ul {
   font-weight: 300;
@@ -145,42 +144,42 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 103, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .about {
   margin-top: 1.5rem;
   font-weight: 300;
 }
 
-/* line 114, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .color--blue {
   color: #1eb8f4;
 }
-/* line 118, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .color--gray {
   color: #3f3f3f;
 }
 
-/* line 123, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 em {
   font-style: italic;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 131, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -190,20 +189,20 @@ hr {
   border-top: 1px solid #c1c1c1;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .container {
   width: 75%;
   max-width: 900px;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 140, ../sass/main.scss */
+  /* line 139, ../sass/main.scss */
   .container {
     width: 85%;
   }
 }
 
-/* line 150, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 header {
   position: relative;
   overflow: hidden;
@@ -211,7 +210,7 @@ header {
   background-color: #f5f4f4;
   color: #3f3f3f;
 }
-/* line 157, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 header:before, header:after {
   content: '';
   position: absolute;
@@ -220,7 +219,7 @@ header:before, header:after {
   opacity: 0.2;
   z-index: 0;
 }
-/* line 167, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 header:before {
   left: 0;
   background: url(../images/header-head.png) no-repeat;
@@ -228,7 +227,7 @@ header:before {
   height: 23.1rem;
   width: 23.9rem;
 }
-/* line 175, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 header:after {
   right: 0;
   background: url(../images/header-elli.png);
@@ -236,31 +235,31 @@ header:after {
   width: 18.85rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 175, ../sass/main.scss */
+  /* line 174, ../sass/main.scss */
   header:after {
     content: none;
   }
 }
 
-/* line 187, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .navbar {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 2rem;
   padding: 0.5rem 0;
 }
-/* line 194, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .navbar a:hover {
   color: #1eb8f4;
 }
 @media screen and (max-width: 767px) {
-  /* line 187, ../sass/main.scss */
+  /* line 186, ../sass/main.scss */
   .navbar {
     margin-bottom: 0;
   }
 }
 
-/* line 204, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .nav-list {
   width: 100%;
   margin-bottom: 0;
@@ -270,7 +269,7 @@ header:after {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 211, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .nav-list li {
   font-size: 0.6rem;
   font-weight: 500;
@@ -278,25 +277,25 @@ header:after {
   text-transform: uppercase;
 }
 
-/* line 219, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .right-nav {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 223, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .right-nav li {
   padding: 0 1rem;
 }
 
-/* line 228, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 #scroll-projects {
   position: relative;
   z-index: 10;
 }
 
-/* line 233, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 .scroll-down {
   display: block;
   width: 2.6rem;
@@ -305,63 +304,67 @@ header:after {
   padding: 3.5rem 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 233, ../sass/main.scss */
+  /* line 232, ../sass/main.scss */
   .scroll-down {
     width: 2rem;
     padding: 2.5rem 0;
   }
 }
 
-/* line 248, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 section {
   padding: 2rem 0;
 }
 
-/* line 252, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 256, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .grid {
   overflow: hidden;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-/* line 261, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .grid .col {
   float: left;
 }
-/* line 265, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 .grid img {
   max-height: 250px;
   border: 1px solid #c1c1c1;
 }
-/* line 270, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 .grid .col-1-3 {
   width: 33.33%;
   padding-right: 20px;
 }
-/* line 275, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .grid .col-1-3:last-child {
   width: 33.33%;
   padding-right: 0px;
 }
 
-/* line 283, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .project {
   margin-bottom: 5rem;
 }
-/* line 286, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 .project img {
   display: block;
   width: 100%;
   height: auto;
   padding: 0.5rem 0;
 }
-/* line 293, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
+.project img:last-of-type {
+  margin-bottom: 1.5rem;
+}
+/* line 296, ../sass/main.scss */
 .project .project-hero {
   margin-bottom: 1rem;
   display: block;
@@ -370,41 +373,41 @@ section {
   padding: 2rem 0;
 }
 
-/* line 304, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .project-heading {
   margin-top: 2rem;
 }
-/* line 307, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 .project-heading h3 {
   font-style: italic;
 }
 
-/* line 312, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 .content {
   width: 85%;
   max-width: 800px;
 }
-/* line 316, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .content ul {
   margin-left: 2rem;
   list-style-type: disc;
   list-style-position: outside;
 }
 @media screen and (max-width: 767px) {
-  /* line 312, ../sass/main.scss */
+  /* line 315, ../sass/main.scss */
   .content {
     width: 100%;
   }
 }
 
-/* line 329, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 footer {
   padding: 2.5rem 0;
   border-top: 5px solid #1eb8f4;
   background-color: #3f3f3f;
 }
 
-/* line 335, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 .footer {
   display: -webkit-flex;
   display: flex;
@@ -414,14 +417,14 @@ footer {
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  /* line 335, ../sass/main.scss */
+  /* line 339, ../sass/main.scss */
   .footer {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
 
-/* line 345, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 .footer-col {
   text-align: center;
   display: -webkit-flex;
@@ -432,25 +435,25 @@ footer {
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  /* line 345, ../sass/main.scss */
+  /* line 349, ../sass/main.scss */
   .footer-col {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin-bottom: 1rem;
   }
 }
-/* line 356, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .footer-col h4 {
   color: #c1c1c1;
 }
-/* line 360, ../sass/main.scss */
+/* line 364, ../sass/main.scss */
 .footer-col img {
   width: 1.65rem;
   height: auto;
   padding-right: 0.7rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 360, ../sass/main.scss */
+  /* line 364, ../sass/main.scss */
   .footer-col img {
     padding: 1rem;
   }

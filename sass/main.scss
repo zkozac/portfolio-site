@@ -71,8 +71,7 @@ h3 {
 	font-size: 1rem;
 	line-height: 1.3em;
 	color: $light_gray;
-	font-weight: 300;
-	font-style: italic;
+	font-weight: 500;
 }
 
 h4 {
@@ -290,6 +289,10 @@ section {
 		padding: 0.5rem 0;
 	}
 
+	img:last-of-type {
+     	margin-bottom: 1.5rem;
+    }
+
 	.project-hero {
 	
 		margin-bottom: 1rem;
@@ -312,6 +315,7 @@ section {
 .content {
 	width: 85%;
 	max-width: 800px;
+
 
 	ul {
 		margin-left: 2rem;
