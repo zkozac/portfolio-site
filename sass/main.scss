@@ -287,8 +287,8 @@ section {
 	}
 
 	.imgWrap:hover .description {
-		opacity: 1;
-		background-color: #fff;
+		opacity: .8;
+		background-color: #000;
 	}
 
 	img {
@@ -299,17 +299,19 @@ section {
 
 	.description {
 		position: absolute;
-		bottom: 0;
+		top: 0;
 		left: 0;
 		width: 100%;
 		padding: 0.5rem;
- 		background-color: white;
-  		color: #3f3f3f;
+ 		background-color: 3f3f3f;
+  		color: #fff;
   		opacity: 0;
-  		transition: all .5s ease-in;
+  		transition: all .3s ease-in;
 
   		p {
   			margin-bottom: 0;
+  			font-weight: 300;
+  			font-size: 1rem;
   		}
 	}
 
